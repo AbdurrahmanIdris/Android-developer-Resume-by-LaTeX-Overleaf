@@ -1,7 +1,12 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-\documentclass[11pt,a4paper,roman]{moderncv} 
+\PassOptionsToPackage{
+	colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,}{hyperref}
+\documentclass[10 pt,a4paper,sans,unicode]{moderncv} 
 % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} 
@@ -9,12 +14,10 @@
 \moderncvcolor{red} 
 % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} 
-% Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.8]{geometry} 
+\usepackage[scale=0.85]{geometry} 
 % Reduce document margins
-%\setlength{\hintscolumnwidth}{1.5cm} % Uncomment to change the width of the dates column
+\setlength{\hintscolumnwidth}{1.85cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{25cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
@@ -26,22 +29,20 @@
 % All information in this block is optional, comment out any lines you don't need
 \title{Junior Android Developer}
 \address{Elshahid Walid Elais street}{Alexandria, Egypt}
-\mobile{(+20) 1207249786}
+\mobile{(+20)1207249786}
 %\mobile{(+2) 01552331245}
 \email{eng.abdurrahman.idris@gmail.com}
 \extrainfo{\href{https://github.com/AbdurrahmanIdris}{\githubsocialsymbol}~%
            \href{https://www.linkedin.com/in/abdurrahmanidris}{\linkedinsocialsymbol}~%
            abdurrahmanidris}
 %----------------------------------------------------------------------------------------
+
 \begin{document}
 \makecvtitle % Print the CV title
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
 \section{Education}
-
 \cventry{2016--Present}{Bachelor's Degree}{}{}{\textit{Department of Electronics and Communications. \newline \link[Faculty of Engineering, Alexandria University]{https://eng.alexu.edu.eg/index.php/en/}}}{}
 
 
@@ -58,16 +59,36 @@
 %	Professional Training SECTION
 %----------------------------------------------------------------------------------------
 \section{Professional training}
-\cvitem{April 2020}{\textbf{Android development Course,}{ by Edraak.org}\newline {It was my first deal with Java and the Android Studio }}
-%\cvitem{}{\textit{Prof. DK Tayal, Department of Computer Science}}
+\cvitem{April 2020-\newline Present}{
+\textbf{Google Africa Developer Scholarship | Android Development Track}\newline
+\textit{by \link[PluralSight.com (My profile link)]{https://app.pluralsight.com/profile/abdurrahman-idris-bb} and \link[Andela.com]{https://andela.com/}}\newline
+\begin{itemize}
+\item I entered the \textbf{Registeration phase} and passed it with \textbf{\textit{+11 watching hours}} and accepted to join \textbf{Phase 1} of the program. 
+\item My goal in this program is to become a Certified Android Developer from Google.
+\end{itemize}}
+\cvitem{April 2020}{
+\textbf{Android applications programming}, by \link[Edraak.org]{www.edraak.org} \link[\textbf{\textit{(Course Certificate)}}]{https://drive.google.com/file/d/1MI46T_i5us3-l_qAA5AgovFn0o5anz_S/view}
+\newline
+{
+\begin{itemize}
+\item I mastered the basics of Java. This includes implementations, interfaces, and algorithms. It also helped me to understand and write data-bases, as well as operate comfortably with object-oriented programming. I also learned to handle exceptions and perform debugging procedures on existing code. \link[\textbf{\textit{Github}}] {https://github.com/AbdurrahmanIdris/Android-Development-Course-by-Edraak.git}
+\item  I learned beginning Android programming concepts using the Java programming language, and built a variety of basic apps using Android Studio. \link[\textbf{\textit{Github}}] {https://github.com/AbdurrahmanIdris/Android-Apps.git}
+\end{itemize}
+}
+}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Honor and Award}
 
-\cvitem{March 2017}{\textbf{Toy Store: Computer Science}}
-%\cvitem{}{\textit{Ms.Meenu Kumar, Computer Science}}
-
-\cvitem{August 2017}{\textbf{Internet Banking App:Prototype}}
-%\cvitem{}{\textit{Developed for Esya,IIITD}}
-
-
+\cvitem{March 2020}{
+{\textbf{Gold Medal and Top 50 in Huawei ICT Competition National Exam}}
+\newline
+{
+\begin{itemize}
+\item After about 5 months of hard working. I achieved my goal and get the gold medal plus a good knowledge and experience about \textbf{Cloud Computing} field.
+\end{itemize}
+}}
 
 %----------------------------------------------------------------------------------------
 %	Skills SECTION
@@ -75,26 +96,26 @@
 
 \section{Technical Skills}
 %
-\cvitem{Programming}{\textsc{Python, Java,  C, SQL, HTML}}
-\cvitem{Software}{\textsc{\LATEX, Protopie, Atom, MS Word, MS Excel, MS Powerpoint, Javasciprt}}
-\cvitem{Web Development}{\textsc{FrontEnd- HTML, CSS, Bootstrap, Javascript, jquery,BackEnd- Command Line, Python, Django}}
-\cvitem{Editing}{\textsc{Adobe Premiere Pro, Adobe Photoshop,Filmora Adobe Lightroom}}
+\cvitem{Industry Knowledge}{\textsc{\textbf{Android Development}, Computer Vision,  Data Visualization, Machine Learning, Data Science}}
+\cvitem{Languages}{\textsc{\textbf{Java}, \textbf{XML}, Python, C, SQL, Matlab, HTML, CSS}}
 
+%----------------------------------------------------------------------------------------
+%	Volunteering SECTION
+%----------------------------------------------------------------------------------------
+\section{Volunteering}
+\cvitem{Oct 19-Now}{
+{\textbf{Translator} | \textbf{Coursera.org}}
+{English to Arabic translator. Translated +1000 words in different courses.}
+}
+\cvitem{Dec19-Now}{
+{\textbf{Media and Marketing Committee member} | \textbf{Student Union F.O.E Alexandria University }}
+}
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
-
 \section{Languages}
-
 \cvitemwithcomment{English}{Fluent}{}
 \cvitemwithcomment{Arabic}{Native}{}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-%\section{Certifications}
-
-%\cventry{April 2015 -- April 2017}{Certified LabVIEW Associate Developer}{\textsc{National Instruments}}{}{}{}
 
 \end{document}
 
